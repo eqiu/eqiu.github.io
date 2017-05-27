@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Finals Betting Arbitrage</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Exposing Basketball </a></h1>
+                <nav><ul>
+                    <li><a href="/category/about-me.html">About Me</a></li>
+                    <li><a href="/category/posts.html">posts</a></li>
+                    <li class="active"><a href="/category/thoughts.html">Thoughts</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/2017_finals_betting.html" rel="bookmark"
+           title="Permalink to Finals Betting Arbitrage">Finals Betting Arbitrage</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-05-27T00:00:00-05:00">
+                Published: Fri 27 May 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/eric.html">Eric</a>
+        </address>
+<p>In <a href="/category/thoughts.html">Thoughts</a>.</p>
+<p>tags: <a href="/tag/betting.html">betting</a> <a href="/tag/arbitrage.html">arbitrage</a> </p>
+</footer><!-- /.post-info -->      <p>
+First off, a brief summary of how betting lines work. Below are the betting prices for the NBA finals series. These prices are from 888east.com taken on 5-27-2017 at around 2 pm CST. 
+Note that betting lines will vary from site to site and do not remain constant throughout time.
+<image src ="images/2017_nba_finals_series.png"/>
+<br>
+There are two outcomes "Cavs Win" (+215) and "Warriors Win" (-270) with attached prices respectively.
+These prices mean that a 100 dollar bet on the Cavs would result in a 215 dollar return if the Cavs won.
+On the flip side it would take a 270 dollar bet on the Warriors for a 100 dollar return if the Warriors won.
+Clearly the Warriors are favorites, but we can use these numbers to see the probabilities of each outcome.
+The probability of the Cavs winning would be <br>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\text{bet}}{\text{bet}&plus;\text{return}}=\frac{100}{100&plus;215}=.317" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\text{bet}}{\text{bet}&plus;\text{return}}=\frac{100}{100&plus;215}=.317" title="\frac{\text{bet}}{\text{bet}+\text{return}}=\frac{100}{100+215}=.317" /></a>
+<br>
+While the probability of the Warriors winning would be <br>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\text{bet}}{\text{bet}&plus;\text{return}}=\frac{270}{270&plus;100}=.72" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\text{bet}}{\text{bet}&plus;\text{return}}=\frac{270}{270&plus;100}=.72" title="\frac{\text{bet}}{\text{bet}+\text{return}}=\frac{270}{270+100}=.72" /></a>
+<br>
+These two numbers do not add up to one, because the bookies need to take a cut of the profits, but for all intensive purposes if you think that the Warriors have a greater than 72% chance of winning or the Cavs have a greater than 31% chance of winning then this is a positive expected value bet.
+</p>
+
+<p>
+What is really interesting is to compare these percentages to the Finals MVP odds. Below is of all of the Finals MVP odds (same timestamp) and the percentages of each can also be calculated using the same metric as above.
+<image height="750" width="500" src ="images/2017_nba_finals_mvp.jpg"/>
+<br>
+For all intensive purposes we will focus on three of these players which I have recreated a smaller table below and added in the relevant percents
+<table style="width:50%">
+  <tr>
+    <th>Player</th>
+    <th>Odds</th> 
+    <th>Percents</th> 
+  </tr>
+  <tr>
+    <td>Lebron James</td>
+    <td>+125</td>
+    <td>44.4%</td> 
+  </tr>
+  <tr>
+    <td>Stephen Curry</td>
+    <td>+150</td> 
+    <td>40%</td>
+  </tr>
+  <tr>
+    <td>Kevin Durant</td>
+    <td>+145</td> 
+    <td>41%</td> 
+  </tr>
+</table>
+
+Notice something weird? Lebron has higher odds of winning finals MVP than the Cavs do of winning the championship. It is basically impossible for a finals MVP winner to come from a losing team.
+Since the NBA awarded the award in 1969, only Jerry West (the inaugural recipient) has won the finals MVP when his team lost in the finals. Thats 47 finals in a row with the MVP coming from the winning side and 11 game 7's in a row.
+Looking specifically at the odds Lebron (44.4% to win finals mvp) has more than a 12% edge on the Cavs (31.7% of winning finals). 
+In an ideal setting, one could bet on the Cavs winning the finals and sell an equal amount on Lebron winning MVP. The only risk in this situtation would be a recreation of 1969.
+Here is a closer examination of the potential returns if a bettor put 100 short on Lebron Finals MVP and 100 long on Cavs winning the finals:
+</p>
+
+<table style="width:50%">
+  <tr>
+    <th>Outcome</th>
+    <th>Long Return</th> 
+    <th>Short Return</th> 
+    <th>Total Return</th>
+  </tr>
+  <tr>
+    <td>Warriors win, Lebron not MVP</td>
+    <td>-100</td>
+    <td>+100</td> 
+    <td>0</td> 
+  </tr>
+  <tr>
+    <td>Warriors win, Lebron MVP</td>
+    <td>-100</td> 
+    <td>-125</td>
+    <td>-225</td>
+  </tr>
+  <tr>
+    <td>Cavs win, Lebron MVP</td>
+    <td>+215</td> 
+    <td>-125</td> 
+    <td>+90</td> 
+  </tr>
+  <tr>
+    <td>Cavs win, Lebron not MVP</td>
+    <td>+215</td> 
+    <td>+100</td> 
+    <td>+315</td> 
+  </tr>
+</table>
+
+<p>
+I personally believe that of the four scenarios a warriors win, Lebron MVP is the least likely. There however is one glaring issue. 
+Previously, I specified the word ideal, because it is not possible to make this bet. Unlike the financial markets, sports bettors cannot sell a line short, only book keepers can do that, thus rendering it impossible to take advantage of this arbitrage.
+If it were possible for individuals to sell lines, I believe this arbitrage would not exist and either Lebron MVP odds would drop or Cavs series odds would rise or both might happen and meet at an equilibrium.
+</p>
+
+<p>
+TLDR: There is a discrepancy between the actual final. I grabbed screenshots at similar times to prove this point.
+</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://reddit.com/r/nba">NBA Subreddit</a></li>
+                            <li><a href="http://www.basketball-reference.com/">NBA Stats</a></li>
+                            <li><a href="https://github.com/eqiu/Thesis/blob/master/Thesis_Final.pdf">My Thesis</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="mailto:eric_h_qiu@yahoo.com">Email</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
